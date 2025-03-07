@@ -31,7 +31,10 @@ const userSchema = new mongoose.Schema({
         type:String,
         default:`https://static.vecteezy.com/system/resources/previews/019/879/186/non_2x/user-icon-on-transparent-background-free-png.png`
     },
-
+    answer:{
+        type:String,
+        required:[true, "Answer is required"]
+    },
 
 }, {timestamps:true})
 
