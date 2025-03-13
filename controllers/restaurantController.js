@@ -25,7 +25,7 @@ const createRestaurantController = async(req,res)=>{
                 message:'Please prove title and Address'
             }) 
 
-            const newRestuarnt = await restaurantModel(
+            const newRestuarnt = await restaurantModel.create(
                 {
                     title, 
                     imageUrl,
